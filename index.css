@@ -2,11 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #fff;
+    background-color: #f0f0f0;
 }
 
 .container {
@@ -20,7 +16,8 @@ header, nav, section, article, footer {
 }
 
 header {
-    background-color: #333;
+    background-color: #726e6e;
+    color: white;
     text-align: center;
     padding: 10px;
 }
@@ -51,13 +48,34 @@ nav a:hover {
 }
 
 #main-content {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.box {
+    background-color: #cde3f1;
+    margin: 10px;
+    flex: 1 0 200px; /* Flex properties: grow, shrink, basis */
+    overflow: hidden;
+    transition: all 0.8s ease; /* Add a slow ease-in transition */
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.box:hover {
+    transform: scale(1.1); /* Add a scale effect on hover */
 }
 
 footer {
-    background-color: #333;
+    background-color: #8a8989;
+    color: white;
     text-align: center;
     padding: 10px;
 }
