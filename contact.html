@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact Us - Code Website</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact.js">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Contact Me</h1>
+            <h1>Contact Us</h1>
         </header>
         
-        <!-- Navigation (You can reuse the Bootstrap navbar from the previous example) -->
+        <!-- Navigation -->
 
         <section id="main-content">
-            <form action="#" method="post" class="contact-form">
+            <form action="#" method="post" class="contact-form" onsubmit="validateForm(event)">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -36,5 +37,8 @@
             <p>&copy; 2023 Code Website. All rights reserved.</p>
         </footer>
     </div>
+
+    <!-- Place the script inclusion at the end of the body to ensure all HTML content is loaded -->
+    <script src="script.js"></script>
 </body>
 </html>
